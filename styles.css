@@ -1,0 +1,200 @@
+/* =========================================================
+   GLOBAL STYLE – DARK THEME + WHITE TEXT
+   المظهر العام
+   ========================================================= */
+html, body {
+  background-color: #050816;
+  color: #ffffff;
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Remove default dark-gray Bootstrap text */
+.text-secondary {
+  color: #d0d4dd !important;
+}
+
+.small {
+  color: #c7c9d1 !important;
+}
+
+/* =========================================================
+   NAVBAR
+   نافكيشن بار يعتبر يعتبر شريط مهام علوي
+   ========================================================= */
+.navbar {
+  background: rgba(5, 8, 22, 0.96);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand span {
+  color: #0d6efd;
+  font-weight: 700;
+}
+
+/* Navbar links */
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link.active {
+  color: #0d6efd !important;
+}
+
+/* =========================================================
+   HERO SECTION (Home page)
+   ========================================================= */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 0 4rem;
+  background: radial-gradient(circle at top, #0d6efd22, #050816 60%);
+}
+
+/* Card on right side */
+.hero-card {
+  background: rgba(15, 23, 42, 0.96);
+  border-radius: 1.3rem;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Badge */
+.badge-pill {
+  border-radius: 999px;
+  padding: 0.35rem 0.95rem;
+  font-size: 0.75rem;
+  background-color: rgba(13, 110, 253, 0.15);
+  border: 1px solid rgba(13, 110, 253, 0.6);
+}
+
+/* Titles */
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* =========================================================
+   CARDS (Used on all pages)
+   ========================================================= */
+.card {
+  background: rgba(15, 23, 42, 0.97);
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  color: #ffffff;
+}
+
+/* Icon circles */
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(13, 110, 253, 0.12);
+  color: #0d6efd;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer {
+  border-top: 1px solid rgba(148, 163, 184, 0.3);
+  background: #020617;
+  color: #ffffff;
+}
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+a {
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9bc8ff;
+  text-decoration: underline;
+}
+
+/* =========================================================
+   LANGUAGE HANDLING
+   ========================================================= */
+[data-lang] {
+  display: none;
+}
+
+body.lang-en [data-lang="en"] {
+  display: block;
+}
+
+body.lang-ar [data-lang="ar"] {
+  display: block;
+}
+
+/* Arabic RTL mode */
+body.lang-ar {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Language buttons */
+.lang-toggle button {
+  min-width: 5rem;
+}
+
+/* =========================================================
+   VIDEO PAGE MEDIA
+   ========================================================= */
+video,
+iframe {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background-color: #000;
+}
+
+/* =========================================================
+   TEST PAGE – MAKE QUESTIONS & ANSWERS WHITE
+   ========================================================= */
+#quizForm p {
+  color: #ffffff !important;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#quizForm label {
+  color: #ffffff !important;
+  cursor: pointer;
+}
+
+/* Radio buttons bigger */
+#quizForm .form-check-input {
+  transform: scale(1.2);
+  margin-top: 0.3rem;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.btn-outline-light {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #000000;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyber Security Awareness Training - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="lang-en">
+
+<!-- NAVBAR --------------------------------------------------------------->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-semibold" href="index.html">
+      Cyber<span>Safe</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home / الصفحة الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link" href="video.html">Video / فيديو</a></li>
+        <li class="nav-item"><a class="nav-link" href="test.html">Test / اختبار</a></li>
+      </ul>
+
+      <div class="lang-toggle d-flex gap-2">
+        <button class="btn btn-sm btn-outline-light" onclick="setLanguage('en')">English</button>
+        <button class="btn btn-sm btn-primary" onclick="setLanguage('ar')">العربية</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION ----------------------------------------------------------->
+<section id="hero">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+
+      <!-- English Hero -->
+      <div class="col-lg-6" data-lang="en">
+        <span class="badge-pill mb-3"><i class="bi bi-shield-lock me-2"></i> Cyber Security Awareness Training</span>
+        <h1 class="display-6 fw-bold mb-3">Help your team stay safe online.</h1>
+        <p class="lead text-secondary mb-4">
+          This platform provides short and practical cyber security training:
+          phishing, passwords, device safety, and data protection.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3">
+          <a href="video.html" class="btn btn-primary btn-lg">Start Video Training</a>
+          <a href="test.html" class="btn btn-outline-light btn-lg">Take the Test</a>
+        </div>
+      </div>
+
+      <!-- Arabic Hero -->
+      <div class="col-lg-6" data-lang="ar">
+        <span class="badge-pill mb-3"><i class="bi bi-shield-lock me-2"></i> برنامج التوعية بالأمن السيبراني</span>
+        <h1 class="display-6 fw-bold mb-3">ساعد فريقك على البقاء آمناً على الإنترنت.</h1>
+        <p class="lead text-secondary mb-4">
+          يقدم هذا الموقع تدريباً قصيراً وعملياً في الأمن السيبراني:
+          التصيد، كلمات المرور، حماية الأجهزة، وحماية البيانات.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3">
+          <a href="video.html" class="btn btn-primary btn-lg">ابدأ تدريب الفيديو</a>
+          <a href="test.html" class="btn btn-outline-light btn-lg">ابدأ الاختبار</a>
+        </div>
+      </div>
+
+      <!-- Right Info Card -->
+      <div class="col-lg-6">
+        <div class="hero-card p-4">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>
+              <h5 class="mb-0" data-lang="en">Why cyber awareness?</h5>
+              <h5 class="mb-0" data-lang="ar">لماذا التوعية بالأمن السيبراني؟</h5>
+              <small class="text-secondary" data-lang="en">Simple habits can prevent most attacks.</small>
+              <small class="text-secondary" data-lang="ar">العادات الصحيحة قد تمنع معظم الهجمات.</small>
+            </div>
+            <div class="icon-circle"><i class="bi bi-shield-check"></i></div>
+          </div>
+
+<!-- EN List -->
+          <ul class="text-secondary small mb-3" data-lang="en">
+            <li>Identify phishing emails & suspicious links.</li>
+            <li>Use strong passwords & MFA.</li>
+            <li>Protect your laptop, phone, and company data.</li>
+          </ul>
+
+          <!-- AR List -->
+          <ul class="text-secondary small mb-3" data-lang="ar">
+            <li>التعرّف على رسائل التصيد والروابط المشبوهة.</li>
+            <li>استخدام كلمات مرور قوية والمصادقة المتعددة.</li>
+            <li>حماية الجهاز والبيانات الخاصة بالشركة.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 3 INFO CARDS SECTION -------------------------------------------------->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100 p-3">
+          <div class="icon-circle mb-3"><i class="bi bi-envelope-exclamation"></i></div>
+          <h5 data-lang="en">Phishing</h5>
+          <h5 data-lang="ar">التصيد الاحتيالي</h5>
+          <p class="small text-secondary" data-lang="en">
+            Learn how attackers trick users via email, SMS, and fake websites.
+          </p>
+          <p class="small text-secondary" data-lang="ar">
+            تعلم كيف يحاول المهاجمون خداع المستخدمين عبر البريد والرسائل والمواقع المزيفة.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 p-3">
+          <div class="icon-circle mb-3"><i class="bi bi-key"></i></div>
+          <h5 data-lang="en">Passwords & MFA</h5>
+          <h5 data-lang="ar">كلمات المرور والمصادقة</h5>
+          <p class="small text-secondary" data-lang="en">
+            Strong passwords and MFA protect accounts from unauthorized access.
+          </p>
+          <p class="small text-secondary" data-lang="ar">
+            كلمات المرور القوية والمصادقة المتعددة تحمي الحسابات من الوصول غير المصرح به.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 p-3">
+          <div class="icon-circle mb-3"><i class="bi bi-laptop"></i></div>
+          <h5 data-lang="en">Device & Data Safety</h5>
+          <h5 data-lang="ar">سلامة الأجهزة والبيانات</h5>
+          <p class="small text-secondary" data-lang="en">
+            Keep your devices updated and follow company data rules.
+          </p>
+          <p class="small text-secondary" data-lang="ar">
+            حافظ على تحديث أجهزتك واتبع سياسات حماية البيانات في العمل.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CREDIT SECTION -------------------------------------------------------->
+<section class="py-4">
+  <div class="container text-center">
+
+    <!-- English -->
+    <p class="small text-secondary" data-lang="en">
+      This project was completed by the student <strong>Ali Asad</strong>  
+      under the supervision of Engineer <strong>Samar Al-rubaye</strong>.
+    </p>
+
+    <!-- Arabic -->
+    <p class="small text-secondary" data-lang="ar">
+      تم إنجاز هذا المشروع من قبل الطالب <strong>علي أسعد</strong>  
+      بإشراف المهندسة <strong>سمر الربيعي</strong.
+    </p>
+
+  </div>
+</section>
+
+<!-- FOOTER --------------------------------------------------------------->
+<footer class="py-3">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center small text-secondary">
+    <span data-lang="en">© <span id="year"></span> CyberSafe Awareness Training</span>
+    <span data-lang="ar">© <span id="year2"></span> برنامج CyberSafe للتوعية</span>
+    <span><i class="bi bi-shield-lock me-1"></i><span data-lang="en">Think before you click.</span><span data-lang="ar">فكر قبل أن تضغط.</span></span>
+  </div>
+</footer>
+
+<!-- SCRIPTS --------------------------------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  function setLanguage(lang) {
+    document.body.classList.remove('lang-en', 'lang-ar');
+    document.body.classList.add('lang-' + lang);
+    document.body.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+  }
+
+  const year = new Date().getFullYear();
+  document.getElementById("year").textContent = year;
+  document.getElementById("year2").textContent = year;
+</script>
+
+</body>
+</html>

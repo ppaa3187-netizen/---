@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyber Security Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-en">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-semibold" href="index.html">
+      Cyber<span>Safe</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home / الصفحة الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link active" href="test.html">Test / اختبار</a></li>
+        <li class="nav-item"><a class="nav-link" href="video.html">Video / فيديو</a></li>
+      </ul>
+
+      <div class="lang-toggle d-flex gap-2">
+        <button class="btn btn-sm btn-outline-light" onclick="setLanguage('en')">English</button>
+        <button class="btn btn-sm btn-primary" onclick="setLanguage('ar')">العربية</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Content -->
+<main class="py-5">
+  <div class="container" style="max-width: 800px;">
+    <h1 class="section-title mb-3" data-lang="en">
+      Cyber Security Quick Test
+    </h1>
+    <h1 class="section-title mb-3" data-lang="ar">
+      الاختبار السريع في الأمن السيبراني
+    </h1>
+
+    <p class="text-secondary mb-4" data-lang="en">
+      Answer these questions to check your awareness. At the end, you will see your score.
+    </p>
+    <p class="text-secondary mb-4" data-lang="ar">
+      أجب عن هذه الأسئلة لتقييم مستوى وعيك. في النهاية ستظهر لك نتيجتك.
+    </p>
+
+    <div class="card">
+      <div class="card-body">
+        <form id="quizForm">
+          <!-- Q1 -->
+          <div class="mb-3">
+            <p class="mb-1" data-lang="en">
+              1. You receive an email with a link to "update your password" and it looks urgent. What is the safest action?
+            </p>
+            <p class="mb-1" data-lang="ar">
+              ١. وصلك بريد إلكتروني يحتوي على رابط لتحديث كلمة المرور ويبدو مستعجلاً. ما هو التصرف الأكثر أمانًا؟
+            </p>
+
+            <div class="form-check small">
+              <input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
+              <label class="form-check-label" for="q1a" data-lang="en">
+                Click the link and change the password quickly.
+              </label>
+              <label class="form-check-label" for="q1a" data-lang="ar">
+                الضغط على الرابط وتغيير كلمة المرور بسرعة.
+              </label>
+            </div>
+            <div class="form-check small">
+              <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+              <label class="form-check-label" for="q1b" data-lang="en">
+                Ignore it and delete all emails about passwords.
+              </label>
+              <label class="form-check-label" for="q1b" data-lang="ar">
+                تجاهله وحذف جميع الرسائل المتعلقة بكلمات المرور.
+              </label>
+            </div>
+            <div class="form-check small">
+              <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+              <label class="form-check-label" for="q1c" data-lang="en">
+                Go directly to the official website (without the email link) and check if password change is required.
+              </label>
+              <label class="form-check-label" for="q1c" data-lang="ar">
+                الدخول مباشرة إلى الموقع الرسمي (بدون استخدام رابط البريد) والتحقق إذا كان تغيير كلمة المرور مطلوبًا.
+              </label>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="mb-3">
+            <p class="mb-1" data-lang="en">
+              2. Which option is the best way to store many different passwords?
+            </p>
+            <p class="mb-1" data-lang="ar">
+              ٢. ما هي أفضل طريقة لتخزين العديد من كلمات المرور المختلفة؟
+            </p>
+
+            <div class="form-check small">
+              <input class="form-check-input" type="radio" name="q2" id="q2a" value="a">
+              <label class="form-check-label" for="q2a" data-lang="en">
+                Use the same strong password for all accounts.
+              </label>
+              <label class="form-check-label" for="q2a" data-lang="ar">
+                استخدام نفس الكلمة القوية لجميع الحسابات.
+              </label>
+            </div>
+            <div class="form-check small">
+              <input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
+              <label class="form-check-label" for="q2b" data-lang="en">
+                Write them on paper and keep it on your desk.
+              </label>
+              <label class="form-check-label" for="q2b" data-lang="ar">
+                كتابتها على ورقة ووضعها على المكتب.
+              </label>
+            </div>
+            <div class="form-check small">
+              <input class="form-check-input" type="radio" name="q2" id="q2c" value="c">
+              <label class="form-check-label" for="q2c" data-lang="en">
+                Use a trusted password manager with one strong master password.
+              </label>
+              <label class="form-check-label" for="q2c" data-lang="ar">
+                استخدام مدير كلمات مرور موثوق مع كلمة مرور رئيسية قوية.
+              </label>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="mb-3">
+            <p class="mb-1" data-lang="en">
+              3. At work, you see a USB drive on the floor. What should you do?
+            </p>
+            <p class="mb-1" data-lang="ar">
+              ٣. في مكان العمل، وجدت وحدة تخزين USB على الأرض. ماذا تفعل؟
+            </p>
+
+            <div class="form-check small">
+              <input class="form-check-input" type="radio" name="q3" id="q3a" value="a">
+              <label class="form-check-label" for="q3a" data-lang="en">
+                Plug it into your computer to see who it belongs to.
+              </label>
+              <label class="form-check-label" for="q3a" data-lang="ar">
+                توصيلها بجهازك لمعرفة صاحبها.
+              </label>
+            </div>
+            <div class="form-check small">
+              <input class="form-check-input" type="radio" name="q3" id="q3b" value="b">
+              <label class="form-check-label" for="q3b" data-lang="en">
+                Give it to IT / security according to company policy.
+              </label>
+              <label class="form-check-label" for="q3b" data-lang="ar">
+                تسليمها لقسم تقنية المعلومات / الأمن وفق سياسة الشركة.
+              </label>
+            </div>
+            <div class="form-check small">
+              <input class="form-check-input" type="radio" name="q3" id="q3c" value="c">
+              <label class="form-check-label" for="q3c" data-lang="en">
+                Take it home and use it for personal files.
+              </label>
+              <label class="form-check-label" for="q3c" data-lang="ar">
+                أخذها للمنزل واستخدامها للملفات الشخصية.
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            <span data-lang="en">Submit test</span>
+            <span data-lang="ar">إرسال الإجابات</span>
+          </button>
+        </form>
+
+        <hr class="border-secondary my-3">
+
+        <div id="result" class="fw-semibold"></div>
+        <div id="feedback" class="small text-secondary mt-1"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function setLanguage(lang) {
+    document.body.classList.remove('lang-en', 'lang-ar');
+    document.body.classList.add('lang-' + lang);
+    document.documentElement.classList.remove('lang-en', 'lang-ar');
+    document.documentElement.classList.add('lang-' + lang);
+    document.body.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+  }
+
+  const form = document.getElementById('quizForm');
+  const resultEl = document.getElementById('result');
+  const feedbackEl = document.getElementById('feedback');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const correct = { q1: 'c', q2: 'c', q3: 'b' };
+    let score = 0;
+    let total = 3;
+    let wrong = [];
+
+    for (const q in correct) {
+      const selected = form.querySelector(`input[name="${q}"]:checked`);
+      if (selected && selected.value === correct[q]) {
+        score++;
+      } else {
+        wrong.push(q.replace('q', ''));
+      }
+    }
+
+    const isArabic = document.body.classList.contains('lang-ar');
+
+    if (!isArabic) {
+      resultEl.textContent = `Score: ${score} / ${total}`;
+      if (wrong.length === 0) {
+        feedbackEl.textContent = "Excellent! You made secure choices in all questions.";
+      } else {
+        feedbackEl.textContent =
+          "Review the questions: " + wrong.join(", ") +
+          ". Think again about phishing, passwords, and unknown USB devices.";
+      }
+    } else {
+      resultEl.textContent = `النتيجة: ${score} / ${total}`;
+      if (wrong.length === 0) {
+        feedbackEl.textContent = "ممتاز! اخترت السلوك الآمن في جميع الأسئلة.";
+      } else {
+        feedbackEl.textContent =
+          "أعد مراجعة الأسئلة: " + wrong.join("، ") +
+          ". فكّر مرة أخرى في التصيد، كلمات المرور، وأجهزة USB المجهولة.";
+      }
+    }
+  });
+</script>
+</body>
+</html>
